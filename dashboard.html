@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EcoPulse Goa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">EcoPulse Goa</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="game.html">Play & Learn</a></li>
+      <li><a href="community.html">Challenges</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Report a Waste Problem</h1>
+    <p>Be the change – Quickly report areas with unmanaged waste.</p>
+  </section>
+
+  <section class="dashboard-form">
+    <form id="reportForm">
+      <label>Location:
+        <input type="text" name="location" placeholder="Calangute Beach" required>
+      </label>
+      <label>Type of Waste:
+        <select name="wasteType" required>
+          <option value="">-- Select --</option>
+          <option value="plastic">Plastic</option>
+          <option value="organic">Organic</option>
+          <option value="e-waste">E-Waste</option>
+        </select>
+      </label>
+      <label>Description:
+        <textarea name="description" placeholder="Brief description" required></textarea>
+      </label>
+      <button type="submit" class="cta">Submit Report</button>
+    </form>
+  </section>
+
+  <section class="reports">
+    <h2>Community Reports</h2>
+    <ul id="reportsList"></ul>
+  </section>
+
+  <footer><p>&copy; 2025 EcoPulse Goa.</p></footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>

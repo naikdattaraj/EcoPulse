@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Play & Learn - EcoPulse Goa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">EcoPulse Goa</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="game.html" class="active">Play & Learn</a></li>
+      <li><a href="community.html">Challenges</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Sort the Waste!</h1>
+    <p>Drag and drop each waste item into the correct bin. Learn Eco-facts while playing 🎮</p>
+  </section>
+
+  <!-- Game Area -->
+  <section class="game-area">
+
+    <!-- Score and Feedback (Now moved up) -->
+    <div class="score">
+      <h3 id="scoreBoard">Score: 0</h3>
+      <div id="factBox">Drag the items into the correct bins!</div>
+    </div>
+
+    <!-- Bins and Items Containers -->
+    <div class="gameBoard">
+      <div class="bin-container">
+        <!-- Bins will be inserted here by JS -->
+      </div>
+      <div class="items-container">
+        <!-- Items will be inserted here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EcoPulse Goa. All rights reserved.</p>
+  </footer>
+
+  <!-- Game logic script -->
+  <script src="game.js"></script>
+</body>
+</html>
+

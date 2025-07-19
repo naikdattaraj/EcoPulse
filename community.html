@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Challenges - EcoPulse Goa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">EcoPulse Goa</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="game.html">Play & Learn</a></li>
+      <li><a href="community.html" class="active">Challenges</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Join Community Challenges</h1>
+    <p>Earn points and eco-badges for your actions!</p>
+  </section>
+
+  <!-- Challenges List -->
+  <section class="challenges">
+    <h2>Active Challenges</h2>
+    <ul>
+      <li><strong>🌱 Plastic-Free Week:</strong> Avoid using plastic for 7 days!</li>
+      <li><strong>🏖️ Beach Clean:</strong> Join the group cleanup this Saturday at 7AM!</li>
+      <li><strong>🌱 Home Composting:</strong> Start composting at home and share your progress!</li>
+    </ul>
+  </section>
+
+  <!-- Challenge Signup Form -->
+  <section class="signup">
+    <h2>Join a Challenge</h2>
+    <form id="challengeForm" autocomplete="off">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit" class="cta">Join Now</button>
+    </form>
+    <p id="confirmationMsg"></p>
+    <ul id="signupResponses"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EcoPulse Goa. All rights reserved.</p>
+  </footer>
+  <script src="community.js"></script>
+</body>
+</html>
+
